@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{margin: 0%;padding: 0%;box-sizing: border-box;}
+  .header{ height: 250px; width: 100%; background-image: url(p14.jpg); position: relative;}
+  #search{ height: 40px; width: 80%; position: absolute; left: 5%;top: 20px;}
+  .main{height: 500px; width: 60%;margin: auto; display: flex;}
+  .box {
+        padding: 1% 2%;
+        width: 50%;
+        margin:  50px 30px 0px;
+        text-align: justify;
+        padding: 2%;
+        line-height: 1.5;}
+
+        button {
+        padding: 3% 8%;
+        margin-top: 20px;}
+        .box h1 {
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 600;}
+        .footer {
+        width: 60%;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        line-height: 2;
+        padding-top: 30px;
+        margin-top: 100px;}
+    
+      .footer h1 {
+        font-size: 40px;
+    
+      }
+      .footer p {
+        font-size: 18px;
+      }
+
+      .nav{height: 150px; width: 100%;background-color: rgba(180, 211, 211,.50); display: none;}
+      #navb{height: 40px; width: 10%; padding: 1% 2%; margin-left: 100px; margin-top: 50px;  text-transform: uppercase; }
+      #click{height: 5px; width: 10%;position: absolute; top: 200px; left: 600px; padding: 1% ; border-radius: 5px 5px 5px 5px;}
+      
+</style>
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#click").click(function(){
+$(".nav").slideToggle(2000);
+});
+});
+
+
+
+</script>
+<body>
+  <div class="header">
+    
+    <p><input type="search" name="search" placeholder="search" id="search"></p>
+    <button id="click">click me</button>
+  </div>
+  
+  <div class="nav">
+    <button id="navb">home</button>
+    <button id="navb">work</button>
+    <button id="navb">profile</button>
+    <button id="navb">notification</button>
+    <button id="navb">me</button>
+  </div>
+
+
+
+
+
+  <div class="main">
+    <div class="box">
+     <h1>Bytes Recruitment</h1>
+        <h3>Re-imagining digital recruitment</h3>
+        <p>
+          Digital recruitment agencies are notorious for bad, old, branding,
+          strategy and workflow. We had to transform this agency from the ground
+          up: strategy, branding, visuals, mindset, training, everything to
+          bring it up to scratch in the modern tech world.
+        </p>
+        <button>View on Dribbble</button><br><br>
+        <hr>
+
+    </div>
+    <div class="box">
+      <img src="p11.jpg" alt="" height="300x" width="100%">
+    <hr>
+    </div>
+     </div>
+  <div class="main">
+    <div class="box">
+      <img src="p9.jpg" alt="" height="300px" width="150%">
+  
+    </div>
+    
+  <div class="box">
+    <br />
+    <hr>
+        <h1>Scandlearn</h1>
+        <h3>Aviation training that doesn't suck</h3>
+        <p>
+          The world of training tools for aviation is rather dull, uninspiring
+          and traditionally difficult to use. I was tasked to take Scandlearn's
+          existing software solution and bring it to life with a whole new UX.
+        </p>
+        <button>View on Dribbble</button>
+        
+      </div>
+      <hr>
+      <div class="box">
+        <img  src="p4.jpg">
+      </div>
+  </div>  
+  <div class="footer">
+    <h1>Got a project in mind? Let's chat.</h1>
+    <br />
+    <p>
+      Whether you have a particular project in mind you’d like me to help
+      with, or you just want advice and feedback on anything, just ask.
+    </p>
+    <br />
+    <button id="thisbutton">LET'S CHAT</button>
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">me@taiyab.co.uk</a><br /><br /><br /><br />
+    <p>Copyright © plz no steal</p>
+    <br /><br />
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
